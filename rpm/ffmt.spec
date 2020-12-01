@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        FFXIV_Modding_Tool (FFMT for short) is a crossplatform commandline interface for Final Fantasy XIV Modding.
 License:        GNU General Public License v3.0
 URL:            https://ffmt.pwd.cat/docs/
-Source0:        https://github.com/fosspill/FFXIV_Modding_Tool/releases/download/v0.9.6.1/FFXIV_Modding_Tool-linux-0.9.6.1.zip
+Source0:        https://github.com/fosspill/FFXIV_Modding_Tool/releases/download/v%{version}/FFXIV_Modding_Tool-linux-%{version}.zip
 AutoReqProv: no
 
 %description
