@@ -5,13 +5,13 @@ Summary:        FFXIV_Modding_Tool (FFMT for short) is a crossplatform commandli
 License:        GNU General Public License v3.0
 URL:            https://ffmt.pwd.cat/docs/
 Source0:        https://github.com/fosspill/FFXIV_Modding_Tool/releases/download/v%{version}/FFXIV_Modding_Tool-linux-%{version}.zip
-AutoReqProv: no
+AutoReqProv:    no
 
 %description
 FFXIV_Modding_Tool, or FFMT for short, is a open source tool based on the xivModdingFramework which is used to modify datafiles belonging to Final Fantasy XIV
 
 %prep
-unzip %{SOURCE0}
+unzip -o %{SOURCE0}
 
 %setup -n FFXIV_Modding_Tool-linux
 
@@ -27,7 +27,6 @@ install -m 0755 ffmt.sh %{buildroot}/%{_bindir}/%{name}
 %files
 %{_bindir}/%{name}
 /opt/ffmt/*
-
 
 %changelog
 * Sun Dec 01 2020 <github@elo.anonaddy.com> 
