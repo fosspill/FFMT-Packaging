@@ -8,8 +8,8 @@ makepkg -sri
 ## RPM-based Distros, such as OpenSuse and Fedora:
 ```
 cd rpm
-rpmbuild --undefine=_disable_source_fetch -bb ffmt.spec
-sudo zypper install  ~/rpmbuild/RPMS/x86_64/ffmt-0.9.6.1-1.x86_64.rpm
+rpmbuild --undefine=_disable_source_fetch --define "_rpmdir $(pwd)" --clean -bb --rmsource ffmt.spec
+sudo zypper install x86_64/ffmt-0.9.6.1-1.x86_64.rpm
 ```
 
 
