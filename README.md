@@ -9,7 +9,7 @@ makepkg -sri
 ```
 cd rpm
 rpmbuild --undefine=_disable_source_fetch --define "_rpmdir $(pwd)" --clean -bb --rmsource ffmt.spec
-sudo zypper install x86_64/ffmt-0.9.6.1-1.x86_64.rpm
+sudo zypper install x86_64/ffmt-0.9.7-1.x86_64.rpm
 ```
 
 
