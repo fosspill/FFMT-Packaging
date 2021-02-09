@@ -1,6 +1,6 @@
 Name:           ffmt
 Version:        0.9.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        FFXIV_Modding_Tool (FFMT for short) is a crossplatform commandline interface for Final Fantasy XIV Modding.
 License:        GNU General Public License v3.0
 URL:            https://ffmt.pwd.cat/docs/
